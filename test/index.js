@@ -15,11 +15,11 @@ function createLoginTracker(userInfo) {
     if (passwordAttempt === userInfo.password) {
       return "Login successful";
     } else {
-      return Attempt ${attemptCount}: Login failed;
+      return `Attempt ${attemptCount}: Login failed`;
     }
   };
 
   return loginAttempt;
 }
 
-module.exports = { createLoginTracker 
+module.exports = { createLoginTracker };
